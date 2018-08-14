@@ -39,7 +39,6 @@ func NewHttpServer(ctx *stCachedContext, log *log.Logger) *httpServer {
 }
 
 func (h *httpServer) checkWritePermission() bool {
-	fmt.Println("in check:%d", h.enableWrite, atomic.LoadInt32(&h.enableWrite))
 	return atomic.LoadInt32(&h.enableWrite) == ENABLE_WRITE_TRUE
 }
 
