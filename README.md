@@ -1,5 +1,10 @@
 # stcache
+
 A simple cache server showing how to use hashicorp/raft
+
+# doc
+
+https://zhuanlan.zhihu.com/p/58048906
 
 # build
 
